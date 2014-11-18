@@ -42,8 +42,7 @@ jabba_compound_guard = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
-	attacks = {
-	}
+	attacks = merge(marksmanmid,brawlermid)
 }
 
 CreatureTemplates:addCreatureTemplate(jabba_compound_guard, "jabba_compound_guard")

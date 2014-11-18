@@ -135,7 +135,8 @@ includeFile("lok/vesp_scavenger.lua")
 includeFile("lok/vixur_webb.lua")
 includeFile("lok/weak_mercenary.lua")
 includeFile("lok/young_spined_snake.lua")
---Tarkin SPecific
+
+--Tarkin Specific
 includeFile("lok/de_battle_droid.lua")
 includeFile("lok/de_blastromech.lua")
 includeFile("lok/de_droideka.lua")

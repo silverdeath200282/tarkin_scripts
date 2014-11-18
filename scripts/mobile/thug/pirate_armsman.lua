@@ -59,7 +59,7 @@ pirate_armsman = Creature:new {
 	},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
+	attacks = merge(brawlermid,marksmanmid)
 }
 
 CreatureTemplates:addCreatureTemplate(pirate_armsman, "pirate_armsman")

@@ -39,7 +39,7 @@ montrus = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
+	attacks = merge(brawlermid,marksmanmid)
 }
 
 CreatureTemplates:addCreatureTemplate(montrus, "montrus")

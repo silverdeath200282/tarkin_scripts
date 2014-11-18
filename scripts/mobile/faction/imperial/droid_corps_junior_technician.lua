@@ -31,20 +31,21 @@ droid_corps_junior_technician = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 5050000},
+				{group = "junk", chance = 6050000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
 				{group = "melee_weapons", chance = 550000},
 				{group = "carbines", chance = 550000},
-				{group = "clothing_attachments", chance = 1325000},
-				{group = "armor_attachments", chance = 1325000}
+				{group = "clothing_attachments", chance = 325000},
+				{group = "armor_attachments", chance = 325000},
+				{group = "wearables_common", chance = 1000000}
 			},
 			lootChance = 2800000
 		}
 	},
 	weapons = {"imperial_weapons_light"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,carbineermaster)
+	attacks = merge(brawlernovice,marksmannovice)
 }
 
 CreatureTemplates:addCreatureTemplate(droid_corps_junior_technician, "droid_corps_junior_technician")

@@ -42,7 +42,7 @@ gondula_tribesman = Creature:new {
 	},
 	weapons = {"ewok_weapons"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster)
+	attacks = merge(marksmanmid,brawlermid)
 }
 
 CreatureTemplates:addCreatureTemplate(gondula_tribesman, "gondula_tribesman")

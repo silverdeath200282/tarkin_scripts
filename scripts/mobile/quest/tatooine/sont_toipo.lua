@@ -31,7 +31,7 @@ sont_toipo = Creature:new {
 	lootGroups = {},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = merge(marksmanmid,brawlermid)
 }
 
 CreatureTemplates:addCreatureTemplate(sont_toipo, "sont_toipo")

@@ -1,5 +1,5 @@
 senior_specforce_urban_guerrilla = Creature:new {
-	objectName = "@mob/creature_names:mission_senior_specforce_guerrilla",
+	objectName = "@mob/creature_names:senior_specforce_guerrilla",
 	socialGroup = "rebel",
 	pvpFaction = "rebel",
 	faction = "rebel",
@@ -26,25 +26,31 @@ senior_specforce_urban_guerrilla = Creature:new {
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
-	templates = {},
+	templates = {"object/mobile/dressed_rebel_specforce_guerilla_human_male_01.iff",
+	             "object/mobile/dressed_rebel_specforce_guerilla_moncal_male_01.iff",
+	             "object/mobile/dressed_rebel_specforce_guerrilla_human_female_01.iff",
+	             "object/mobile/dressed_rebel_specforce_guerrilla_rodian_female_01.iff",
+	             "object/mobile/dressed_rebel_specforce_guerrilla_rodian_male_01.iff",
+	             "object/mobile/dressed_rebel_specforce_guerrilla_zabrak_female_01.iff",},
 	lootGroups = {
 		{
-	        groups = {
+			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 3700000},
+				{group = "junk", chance = 4700000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
-                		{group = "melee_weapons", chance = 1000000},
-                		{group = "carbines", chance = 1000000},
-				{group = "clothing_attachments", chance = 1100000},
-				{group = "armor_attachments", chance = 1100000}
+				{group = "melee_weapons", chance = 1000000},
+				{group = "carbines", chance = 1000000},
+				{group = "clothing_attachments", chance = 100000},
+				{group = "armor_attachments", chance = 100000},
+				{group = "wearables_common", chance = 1000000}
 			},
 			lootChance = 3000000
-		}	
+		}
 	},
 	weapons = {"imperial_weapons_medium"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(senior_specforce_urban_guerrilla, "senior_specforce_urban_guerrilla")

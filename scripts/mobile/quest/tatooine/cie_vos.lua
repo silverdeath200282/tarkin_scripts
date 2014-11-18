@@ -42,7 +42,7 @@ cie_vos = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
+	attacks = merge(marksmanmid,brawlermid)
 }
 
 CreatureTemplates:addCreatureTemplate(cie_vos, "cie_vos")

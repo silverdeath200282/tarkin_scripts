@@ -31,21 +31,22 @@ stormtrooper_bombardier = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 2900000},
+				{group = "junk", chance = 3400000},
 				{group = "rifles", chance = 1200000},
 				{group = "pistols", chance = 1200000},
 				{group = "melee_weapons", chance = 1200000},
 				{group = "carbines", chance = 1200000},
-				{group = "clothing_attachments", chance = 750000},
-				{group = "armor_attachments", chance = 750000},
-				{group = "stormtrooper_common", chance = 700000}
+				{group = "clothing_attachments", chance = 250000},
+				{group = "armor_attachments", chance = 250000},
+				{group = "stormtrooper_common", chance = 700000},
+				{group = "wearables_common", chance = 500000}
 			},
 			lootChance = 2800000
-		}						
+		}
 	},
 	weapons = {"st_bombardier_weapons"},
 	conversationTemplate = "",
-	attacks = merge(commandomaster,brawlermaster)
+	attacks = merge(commandomaster,marksmanmaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(stormtrooper_bombardier, "stormtrooper_bombardier")

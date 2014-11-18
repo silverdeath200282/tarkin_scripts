@@ -4,14 +4,14 @@ imperial_senior_cadet = Creature:new {
 	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 10,
-	chanceHit = 0.280000,
+	chanceHit = 0.28,
 	damageMin = 90,
 	damageMax = 110,
 	baseXp = 356,
 	baseHAM = 810,
 	baseHAMmax = 990,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -19,7 +19,7 @@ imperial_senior_cadet = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0.000000,
+	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -37,19 +37,20 @@ imperial_senior_cadet = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 5650000},
-				{group = "rifles", chance = 550000},
-				{group = "pistols", chance = 550000},
-                		{group = "melee_weapons", chance = 550000},
-                		{group = "carbines", chance = 550000},
-				{group = "clothing_attachments", chance = 1025000},
-				{group = "armor_attachments", chance = 1025000}
+				{group = "junk", chance = 4850000},
+				{group = "rifles", chance = 1000000},
+				{group = "pistols", chance = 1000000},
+				{group = "melee_weapons", chance = 1000000},
+				{group = "carbines", chance = 1000000},
+				{group = "clothing_attachments", chance = 25000},
+				{group = "armor_attachments", chance = 25000},
+				{group = "wearables_common", chance = 1000000}
 			},
-			lootChance = 2800000
-		}						
+			lootChance = 2200000
+		}
 	},
 	weapons = {"ranged_weapons"},
-	attacks = merge(riflemanmaster,carbineermaster)
+	attacks = merge(brawlernovice,marksmannovice)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_senior_cadet, "imperial_senior_cadet")
